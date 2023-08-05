@@ -1,7 +1,72 @@
-@media (max-width: 1200px) {}
-@media (max-width: 520px) {
+:root{
+    --cor-principal : #1A1A29;
+    --cor-cabecalho : #181824;
+    --banco : #FFF;
+    --lilas-padrao : #7562E0;
+    --dimensao : 24px;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 900px) {
+    .informacoes__imagem{
+        display:none;
+    }
+
+    .informacoes__textos{
+        margin: 6em 2em 0 3em;
+    }
+}
+@media (max-width: 576px) {
     .container__opcoes{
         display: none;
     }
+
+    .menu__hamburgue{
+        display: block;
+        padding: .7em;
+        margin-right: 1em;
+        height: 100%;
+    }
+
+    .container_botao{
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer{
+        width: var(--dimensao);
+        height: var(--dimensao);
+        background-image: url("../imgs/menu1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+
+    .container_botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer{
+        background-image: url("../imgs/menu2.png");
+    }
+
+    /*     Sobre     */
+    .sobre__experiencia{
+        flex-direction: column;
+    }
+
+    .sobre__tempo{
+        align-items: center;
+        margin: 0 1em;
+    }
+
+    .sobre__tempo-informacoes{
+        margin-top: .5em;
+        margin-left: 0;
+    }
+
+    .sobre__tipos{
+        display: none;
+    }
 }
-@media (max-width: 376px) {}
+@media (max-width: 376px) {
+    .sobre__botoes{
+        flex-direction: column;
+    }
+}

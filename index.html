@@ -9,16 +9,23 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Filipe Paulo</title>
 </head>
 <body>
     <header class="cabecalho">
         <div class="container">
             <div class="container__logo"><a href="#" class="container__logo-link"><b>Filipe</b> Paulo</a></div>
+            <div class="menu__hamburgue">
+                <input type="checkbox" id="menu" class="container_botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>
+            </div>
             <div class="container__opcoes">
-                <a href="#" class="opcoes__link">Sobre</a>
-                <a href="#" class="opcoes__link">Portifólio</a>
-                <a href="#" class="opcoes__link">Contatos</a>
+                <a href="#sobre" class="opcoes__link">Sobre</a>
+                <a href="#portifolio" class="opcoes__link">Portifólio</a>
+                <a href="#contatos" class="opcoes__link">Contatos</a>
             </div>
         </div>
     </header>
@@ -27,7 +34,7 @@
             <div class="apresentacao__centro">
                 <div class="informacoes__textos">
                     <h2 class="texto__eu-sou infor__aling">Olá, Eu sou</h2>
-                    <h1 class="texto__nome infor__aling">Filipe Paulo C Silva</h1>
+                    <h1 class="texto__nome infor__aling">Filipe Paulo</h1>
                     <p class="texto__sobre infor__aling">Desenvolvedor Backend nas linguagens C#, .NET , JavaScript, PHP com conheciomento frontend em Angular</p>
                     <div class="sobre__botoes">
                         <a href="#" class="sobre__botoes-sobre"><img src="./src/imgs/user.png" class="img-sobre" alt="icone sobre mim"> Sobre mim</a>
@@ -36,6 +43,77 @@
                 </div>
                 <div class="informacoes__imagem"><img src="./src/imgs/eu.png" alt="" class="informacoes__imagem-img"></div>
             </div>
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="sobre__container">
+            <div class="sobre__informacoes">
+                <h2 class="sobre__titulo">Sobre Mim:</h2>
+                <p class="sobre__texto">Sou um programador com habilidades nas linguagens C#, Javascript e PHP. Tenho conhecimento solido em desenvolvimento de Frontend e estou me dedicando a me especializar em Backend. Estou sempre buscando me manter atualizado no mundo da tecnologia e aprimorar minhas habilidades de programação.</p>
+            </div>
+            <div class="sobre__experiencia">
+                <div class="sobre__tempo">5+</div>
+                <div class="sobre__tempo-informacoes">Informações a serem acrescentadas</div>
+            </div>
+            <div class="sobre__tipos">
+                <div class="tipos__item"></div>
+                <div class="tipos__item"></div>
+                <div class="tipos__item"></div>
+                <div class="tipos__item"></div>
+                <div class="tipos__item"></div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="skills__container">
+            <h2 class="skill__titulo">Serviço que fazemos:</h2>
+            <div class="skills_itens">
+                <div class="item__skill item__skill-tipo1">
+
+                </div>
+                <div class="item__skill item__skill-tipo2">
+
+                </div>
+                <div class="item__skill item__skill-tipo1">
+
+                </div>
+                <div class="item__skill item__skill-tipo2">
+
+                </div>
+                <div class="item__skill item__skill-tipo1">
+
+                </div>
+                <div class="item__skill item__skill-tipo2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portifolio" id="portifolio">
+        <div class="portifolio__container">
+            <div class="portifolio__item">
+                <h2 class="portifolio__titulo">Projetos:</h2>
+                <p class="texto"></p>
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">teste</div>
+                        <div class="swiper-slide">testando</div>
+                        <div class="swiper-slide">testando</div>
+                        <div class="swiper-slide">testando</div>
+                        <div class="swiper-slide">testando</div>
+                        <div class="swiper-slide">testando</div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contatos" id="contatos">
+        <div class="contatos__container">
+            <h2 class="contatos__titulo">Contatos:</h2>
         </div>
     </section>
 </body>
