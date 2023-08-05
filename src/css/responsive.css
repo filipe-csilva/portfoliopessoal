@@ -1,3 +1,7 @@
 @media (max-width: 1200px) {}
-@media (max-width: 500px) {}
+@media (max-width: 520px) {
+    .container__opcoes{
+        display: none;
+    }
+}
 @media (max-width: 376px) {}

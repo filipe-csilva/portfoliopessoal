@@ -2,7 +2,7 @@
     --cor-principal : #1A1A29;
     --cor-cabecalho : #181824;
     --banco : #FFF;
-    --logo : #7562E0;
+    --lilas-padrao : #7562E0;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     background-color: var(--cor-principal);
+    color: var(--banco);
 }
 
 a{
@@ -33,9 +34,10 @@ a{
 }
 
 .container__logo-link{
-    color: var(--logo);
+    color: var(--lilas-padrao);
     font-size: 18px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .container__opcoes{
@@ -46,4 +48,81 @@ a{
     margin: 0 1em;
     font-size: 18px;
     font-weight: 500;
+    text-transform: uppercase;
+}
+
+/*  Apresentação  */
+
+.apresentacao{
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao__informacoes{
+    width: 80em;
+    display: flex;
+    justify-items: center;
+}
+
+.apresentacao__centro{
+    display: flex;
+    width: 80em;
+    justify-content: space-around;
+    gap: 5em;
+}
+
+.informacoes__textos{
+    margin-top: 14em;
+}
+
+.texto__eu-sou{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.texto__nome{
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.infor__aling{
+    margin-bottom: 0.5em;
+}
+
+.texto__sobre{
+    font-size: 18px;
+}
+
+.sobre__botoes{
+    display: flex;
+    gap: 2em;
+    padding: 1em 0;
+}
+
+.sobre__botoes-sobre{
+    padding: 1em;
+    background-color: var(--lilas-padrao);
+    border-radius: 15px;
+}
+
+.sobre__botoes-projeto{
+    padding: 1em;
+    border: 1px solid;
+    border-color: var(--lilas-padrao);
+    border-radius: 15px;
+}
+
+.img-sobre{
+    margin-right: 0.5em;
+}
+
+.informacoes__imagem{
+    background-image: url("../imgs/Ellipse1.png");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 0 12em;
+}
+
+.informacoes__imagem-img{
+    margin-bottom: -3px;
 }
