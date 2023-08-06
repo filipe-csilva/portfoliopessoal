@@ -1,0 +1,18 @@
+.swiper{
+    width: 60em;
+    padding: 0 6em;
+}
+
+.swiper-slide img{
+    width: 16em;
+}
+
+.swiper-pagination{
+    position: initial;
+    padding: 0.5em;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    display:none;
+}
