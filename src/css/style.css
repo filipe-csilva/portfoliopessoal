@@ -1,7 +1,7 @@
 :root{
     --cor-principal : #1A1A29;
     --cor-cabecalho : #181824;
-    --banco : #FFF;
+    --branco : #FFF;
     --lilas-padrao : #7562E0;
     --cinza-detalhe : #BDBDBD;
 }
@@ -49,14 +49,17 @@ a{
     margin: 0 1em;
     font-size: 18px;
     font-weight: 500;
+    color: var(--branco);
     text-transform: uppercase;
+    transition-duration: 600ms;
 }
 
 .container__opcoes :hover{
     color: var(--lilas-padrao);
-    transition-duration: 300ms;
+    transition-duration: 600ms;
 }
 
+.lista-menu,
 .menu__hamburgue{
     display: none;
 }
@@ -210,12 +213,13 @@ a{
     height: 200px;
     background-color: var(--cinza-detalhe);
     border: 1px solid;
+    border-radius: 4%;
     border-color: var(--lilas-padrao);
 }
 
 .sobre__tipos :hover{
     background-color: var(--lilas-padrao);
-    border-color: var(--banco);
+    border-color: var(--branco);
 }
 
 /*                     SKILL                    */
@@ -261,7 +265,7 @@ a{
 }
 
 .item__skill-tipo2{
-    border-color: var(--banco);
+    border-color: var(--branco);
 }
 
 /*                     Portifolio                    */
@@ -272,6 +276,7 @@ a{
 
 .portifolio__container{
     width: 80em;
+    padding: 5em 0;
 }
 
 .portifolio__titulo{
@@ -279,6 +284,11 @@ a{
     color: var(--lilas-padrao);
     font-size: 32px;
     font-weight: 500;
+}
+
+.portifolio__texto{
+    font-size: 18px;
+    padding: 1em 2.5em;
 }
 
 /*                     Contatos                    */
@@ -297,4 +307,20 @@ a{
     color: var(--lilas-padrao);
     font-size: 32px;
     font-weight: 500;
+}
+
+/*                       Final                      */
+
+.footer__final{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-cabecalho);
+}
+
+.final{
+    padding: 1em;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--cinza-detalhe);
+    font-weight: 300;
 }

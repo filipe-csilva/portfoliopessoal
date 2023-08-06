@@ -1,7 +1,7 @@
 :root{
     --cor-principal : #1A1A29;
     --cor-cabecalho : #181824;
-    --banco : #FFF;
+    --branco : #FFF;
     --lilas-padrao : #7562E0;
     --dimensao : 24px;
 }
@@ -44,6 +44,38 @@
 
     .container_botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer{
         background-image: url("../imgs/menu2.png");
+    }
+
+    .lista-menu{
+        display: none;
+        position: absolute;
+        top: 6%;
+        width: 15vw;
+    }
+
+    .lista-menu__titulo,
+    .lista-menu__item{
+        padding: 1em;
+        background-color: var(--lilas-padrao);
+        margin-left: -5em;
+    }
+
+    .lista-menu__titulo{
+        color: var(--cor-laranja);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .lista-menu__link{
+        background: var(--branco);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+
+    .container_botao:checked ~ .lista-menu{
+        display:block;
     }
 
     /*     Sobre     */

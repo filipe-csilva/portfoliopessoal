@@ -22,6 +22,18 @@
                 <label for="menu" class="container__rotulo">
                     <span class="cabecalho__menu-hamburguer container__imagem"></span>
                 </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Opções:</li>
+                    <li class="lista-menu__item">
+                        <a href="#sobre" class="lista-menu__link">Sobre</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#portifolio" class="lista-menu__link">Portifólio</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#contatos" class="lista-menu__link">Contatos</a>
+                    </li>
+                </ul>
             </div>
             <div class="container__opcoes">
                 <a href="#sobre" class="opcoes__link">Sobre</a>
@@ -38,8 +50,8 @@
                     <h1 class="texto__nome infor__aling">Filipe Paulo</h1>
                     <p class="texto__sobre infor__aling">Desenvolvedor Backend nas linguagens C#, .NET , JavaScript, PHP com conheciomento frontend em Angular</p>
                     <div class="sobre__botoes">
-                        <a href="#" class="sobre__botoes-sobre"><img src="./src/imgs/user.png" class="img-sobre" alt="icone sobre mim"> Sobre mim</a>
-                        <a href="#" class="sobre__botoes-projeto"><img src="./src/imgs/eye.png" class="img-sobre" alt="icone Projetos"> Projetos</a>
+                        <a href="#sobre" class="sobre__botoes-sobre"><img src="./src/imgs/user.png" class="img-sobre" alt="icone sobre mim"> Sobre mim</a>
+                        <a href="#portifolio" class="sobre__botoes-projeto"><img src="./src/imgs/eye.png" class="img-sobre" alt="icone Portifólio"> Portifólio</a>
                     </div>
                 </div>
                 <div class="informacoes__imagem"><img src="./src/imgs/eu.png" alt="" class="informacoes__imagem-img"></div>
@@ -93,17 +105,17 @@
     <section class="portifolio" id="portifolio">
         <div class="portifolio__container">
             <div class="portifolio__item">
-                <h2 class="portifolio__titulo">Projetos:</h2>
-                <p class="texto"></p>
+                <h2 class="portifolio__titulo">Portifólio:</h2>
+                <p class="portifolio__texto">Exemplo de projetos desenvolvidos</p>
                 <div class="swiper">
                     <div class="swiper-pagination"></div>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../AluraBooks/src/imgs/Acessibilidade.png" alt="Imagem ApacheKafka"></div>
-                        <div class="swiper-slide"><img src="../AluraBooks/src/imgs/Liderança.png" alt="Imagem Licença"></div>
-                        <div class="swiper-slide"><img src="../AluraBooks/src/imgs/Javascript.png" alt="Imagem Javascript"></div>
-                        <div class="swiper-slide"><img src="../AluraBooks/src/imgs/Portugol.png" alt="Imagem Guia de Portugol"></div>
-                        <div class="swiper-slide"><img src="../AluraBooks/src/imgs/Acessibilidade.png" alt="Imagem Acessibilidade"></div>
-                        <div class="swiper-slide"><img src="../AluraBooks/src/imgs/GuiaFront-end.png" alt="Imagem Guia de Front-End"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -117,6 +129,9 @@
             <h2 class="contatos__titulo">Contatos:</h2>
         </div>
     </section>
+    <footer class="footer__final">
+        <p class="final">&copy; COPYRIGHT 2023 - FPCS NETWORK, Codigo diponível para todos</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./src/js/swiper.js"></script>
 </body>

@@ -1,10 +1,23 @@
-.swiper{
-    width: 60em;
-    padding: 0 6em;
+:root{
+    --cor-principal : #1A1A29;
+    --cor-cabecalho : #181824;
+    --banco : #FFF;
+    --lilas-padrao : #7562E0;
+    --cinza-detalhe : #BDBDBD;
+    --cinza-projetos : #31313F;
 }
 
-.swiper-slide img{
-    width: 16em;
+.swiper{
+    width: 60em;
+    padding: 0 1em;
+}
+
+.swiper-slide{
+    border: 1px solid;
+    background-color: var(--cinza-projetos);
+    width: 15em;
+    height: 21em;
+    border-radius: 4%;
 }
 
 .swiper-pagination{
@@ -15,4 +28,31 @@
 .swiper-button-prev,
 .swiper-button-next{
     display:none;
+}
+
+@media (max-width: 1000px) {
+    .swiper{
+        width: 50em;
+    }
+}
+@media (max-width: 850px) {
+    .swiper{
+        width: 45em;
+    }
+}
+@media (max-width: 800px) {
+    .swiper{
+        width: 40em;
+    }
+
+    .swiper-wrapper{
+        width: 10em;
+        gap: 2;
+    }
+}
+
+@media (max-width: 800px) {
+    .swiper{
+        display: none;
+    }
 }
