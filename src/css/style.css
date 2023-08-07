@@ -203,7 +203,7 @@ a{
 .sobre__tipos{
     display: flex;
     justify-content:space-around;
-    padding: 0 2em;
+    padding: 0 3em;
     flex-wrap: wrap;
     gap: 1em;
 }
