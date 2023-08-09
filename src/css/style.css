@@ -21,7 +21,9 @@ a{
 .cabecalho{
     background-color: var(--cor-cabecalho);
     display: flex;
+    width: 100%;
     justify-content: center;
+    position: fixed;
 }
 
 .container{
@@ -39,6 +41,14 @@ a{
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.img__logo{
+    width: 6em;
+    margin: 1em 0 -1em 1.9em;
+    padding: 1em;
+    position: absolute;
+    background-color: var(--cor-cabecalho);
 }
 
 .container__opcoes{
