@@ -29,7 +29,7 @@
                         <a href="#sobre" class="lista-menu__link">Sobre</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#portifolio" class="lista-menu__link">Portifólio</a>
+                        <a href="#portifolio" class="lista-menu__link">Portfólio</a>
                     </li>
                     <li class="lista-menu__item">
                         <a href="#contatos" class="lista-menu__link">Contatos</a>
@@ -70,7 +70,7 @@
                 <div class="sobre__tempo-informacoes">Informações a serem acrescentadas</div>
             </div>
             <div class="sobre__tipos">
-                <div class="tipos__item"></div>
+                <div class="tipos__item__dif"></div>
                 <div class="tipos__item"></div>
                 <div class="tipos__item"></div>
                 <div class="tipos__item"></div>
@@ -126,7 +126,33 @@
     </section>
     <section class="contatos" id="contatos">
         <div class="contatos__container">
-            <h2 class="contatos__titulo">Contatos:</h2>
+            <div class="container__redes">
+                <h2 class="contatos__titulo">Contatos:</h2>
+                <p class="contatos__texto">Satisfeito comigo? Por favor entre em contato</p>
+                <div class="contatos__icons">
+                    <img src="./src/imgs/facebook.png" alt="icon face">
+                    <img src="./src/imgs/instagram.png" alt="icon instagram">
+                    <img src="./src/imgs/sms.png" alt="icon email">
+                </div>
+            </div>
+            <div class="container__magic">
+                <p class="texto__magic">Entre em contato comigo, vamos fazer mágica juntos</p>
+                <div class="contatos_email">
+                    <form method="post" action="#">
+                        <div class="form__email">
+                                <input class="contato__item" type="text" Nome="Nome" id="Nome" value="" placeholder="Nome" />
+                                <input class="contato__item" type="email" Nome="email" id="email" value="" placeholder="Email" />
+                                <textarea class="contato__item" Nome="message" id="message" placeholder="Digite sua mensagem" rows="6"></textarea>
+                        </div>
+                        <div class="contatos__uniform">
+                            <div class="contato__botoes">
+                                    <input class="contato__botao__esquerda" type="submit" value="Enviar" />
+                                    <input class="contato__botao__direita" type="reset" value="Limpar" class="alt" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer__final">

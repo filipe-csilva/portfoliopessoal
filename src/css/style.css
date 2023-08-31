@@ -23,7 +23,6 @@ a{
     display: flex;
     width: 100%;
     justify-content: center;
-    position: fixed;
 }
 
 .container{
@@ -213,21 +212,22 @@ a{
 .sobre__tipos{
     display: flex;
     justify-content:space-around;
-    padding: 0 3em;
+    padding: 0 8.6em;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 0.5em;
 }
 
-.tipos__item{
+.tipos__item,
+.tipos__item__dif{
     width: 200px;
     height: 200px;
     background-color: var(--cinza-detalhe);
-    border: 1px solid;
-    border-radius: 4%;
+    /*border: 1px solid;
+    border-radius: 4%;*/
     border-color: var(--lilas-padrao);
 }
 
-.sobre__tipos :hover{
+.tipos__item__dif{
     background-color: var(--lilas-padrao);
     border-color: var(--branco);
 }
@@ -309,7 +309,28 @@ a{
 
 .contatos__container{
     width: 80em;
+    padding: 5em 0;
+    display: flex;
+    justify-content: center;
     background-color: var(--cor-cabecalho);
+}
+
+.container__redes{
+    width: 50%;
+}
+
+.contatos__texto{
+    padding: 1em 2.8em;
+}
+
+.contatos__icons{
+    gap: 1em;
+    padding: 0 2.6em;
+}
+
+.container__magic{
+    width: 50%;
+    margin-top: em;
 }
 
 .contatos__titulo{
@@ -317,6 +338,60 @@ a{
     color: var(--lilas-padrao);
     font-size: 32px;
     font-weight: 500;
+}
+
+.form__email{
+    display: flex;
+    width: 26.8em;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contatos_email{
+    padding: 1em 0;
+}
+
+.contato__item{
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgba(189,189,189,0.2);
+}
+
+.contato__item::placeholder{
+    color: var(--branco);
+}
+
+.contato__botoes{
+    padding: 1em;
+    gap: 1em;
+    display: flex;
+}
+
+.contato__botao__esquerda{
+    padding: 1em;
+    background-color: var(--lilas-padrao);
+    border-radius: 15px;
+    border: none;
+    align-items: center;
+    color: var(--branco);
+    width: 8em;
+    text-transform: uppercase;
+}
+
+.contato__botao__direita{
+    width: 8em;
+    border: 1px solid;
+    border-color: var(--lilas-padrao);
+    background-color: var(--cor-cabecalho);
+    color: var(--branco);
+    border-radius: 15px;
+    text-transform: uppercase;
 }
 
 /*                       Final                      */
