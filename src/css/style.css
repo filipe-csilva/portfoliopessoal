@@ -44,10 +44,10 @@ a{
 
 .img__logo{
     width: 6em;
-    margin: 1em 0 -1em 1.9em;
+    margin: 3em 0 -1em 1.9em;
     padding: 1em;
     position: absolute;
-    background-color: var(--cor-cabecalho);
+    /*background-color: var(--cor-cabecalho);*/
 }
 
 .container__opcoes{
@@ -212,15 +212,15 @@ a{
 .sobre__tipos{
     display: flex;
     justify-content:space-around;
-    padding: 0 8.6em;
+    padding: 0 1.5em;
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 0.1em;
 }
 
 .tipos__item,
 .tipos__item__dif{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-color: var(--cinza-detalhe);
     /*border: 1px solid;
     border-radius: 4%;*/
@@ -230,6 +230,24 @@ a{
 .tipos__item__dif{
     background-color: var(--lilas-padrao);
     border-color: var(--branco);
+}
+
+.container__item__tipos{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 6em;
+}
+
+.tipos__item__icon{
+    width: 40px;
+}
+
+.tipos__item__texto{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /*                     SKILL                    */
@@ -300,6 +318,43 @@ a{
     font-size: 18px;
     padding: 1em 2.5em;
 }
+
+.carrossel__tudo{
+    margin: 0.8em;
+}
+
+.carrossel__topo{
+    height: 19em;
+}
+
+.carrossel__img{
+    width: 15.2em;
+    border: 2px solid;
+    border-color: var(--lilas-padrao);
+    border-radius: 4%;
+}
+
+.carrossel__titulo{
+    padding: 0.5em 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--lilas-padrao);
+    text-transform: uppercase;
+}
+
+.carrossel__texto{
+    line-height: 20px;
+}
+
+.carrossel__botoes{
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
 
 /*                     Contatos                    */
 .contatos{
