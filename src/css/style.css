@@ -411,6 +411,7 @@ a{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 300;
+    color: var(--branco);
     border: none;
     outline: 0;
     text-decoration: none;
@@ -420,6 +421,13 @@ a{
 
 .contato__item::placeholder{
     color: var(--branco);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.contato__textarea{
+    resize: none;
 }
 
 .contato__botoes{
