@@ -305,6 +305,7 @@ a{
 .portifolio__container{
     width: 80em;
     padding: 5em 0;
+    border: 1px solid;
 }
 
 .portifolio__titulo{
@@ -328,8 +329,8 @@ a{
 }
 
 .carrossel__img{
-    width: 15.2em;
-    border: 2px solid;
+    width: 15.1em;
+    border: 3px solid;
     border-color: var(--lilas-padrao);
     border-radius: 4%;
 }
