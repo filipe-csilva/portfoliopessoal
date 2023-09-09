@@ -152,7 +152,21 @@
                                 <div class="carrossel__topo">
                                     <img style="height: 7.6em;" src="https://camo.githubusercontent.com/b672a6e068f2536f71bbdf74c5eb100ff3e222c8ce1c0e451da0fd5ea152e0f8/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3736393339343636373533313533343338362f313132353631373033333739353630343532302f436170747572615f64655f74656c615f323032332d30372d30315f3135313334342e706e67" alt="" class="carrossel__img">
                                     <h2 class="carrossel__titulo">API de Tarefas</h2>
-                                    <p class="carrossel__texto">Este é um projeto de exemplo que demonstra um aplicativo web usando ASP.NET para realizar operações CRUD (Create, Read, Update, Delete) para tarefas e usuários.</p>
+                                    <p class="carrossel__texto">Este é um projeto de exemplo que demonstra um aplicativo web usando ASP.NET para realizar operações CRUD (Create, Read, Update, Delete) para gerenciar tarefas.</p>
+                                </div>
+                                <div class="carrossel__botoes">
+                                    <!--<a href="#" class="sobre__botoes-sobre">View Live</a>-->
+                                    <a href="https://github.com/filipe-csilva/SistemaDeTarefas" style="width: 100%;" class="sobre__botoes-projeto">git repo</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="carrossel__tudo">
+                                <div class="carrossel__topo">
+                                    <img style="height: 7.6em;" src="https://camo.githubusercontent.com/86aa0e39e753fd304e3e842ee5de0e2a08bbee4155b3003be163ac758c7e4b2b/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3736393339343636373533313533343338362f313134393930333036323330383234353632342f427573696e6e65732e706e67" alt="" class="carrossel__img">
+                                    <h2 class="carrossel__titulo">API de Vendas</h2>
+                                    <p class="carrossel__texto">Este é um projeto de exemplo que demonstra um aplicativo web usando ASP.NET para realizar operações CRUD (Create, Read, Update, Delete) de gerenciamento de vendas.</p>
                                 </div>
                                 <div class="carrossel__botoes">
                                     <!--<a href="#" class="sobre__botoes-sobre">View Live</a>-->
@@ -221,16 +235,16 @@
             <div class="container__magic">
                 <p class="texto__magic">Entre em contato comigo, vamos fazer mágica juntos</p>
                 <div class="contatos_email">
-                    <form method="post" action="mailto:filipepaucs@gmail.com" enctype="text/plain">
+                    <form id="meuFormulario">
                         <div class="form__email">
-                                <input class="contato__item" type="text" Nome="Nome" id="Nome" value="" placeholder="Nome" autocomplete="off" />
+                                <input class="contato__item" type="text" Nome="nome" id="nome" value="" placeholder="Nome" autocomplete="off" />
                                 <input class="contato__item" type="email" Nome="email" id="email" value="" placeholder="Email" autocomplete="off" />
-                                <textarea class="contato__item contato__textarea" Nome="message" id="message" placeholder="Digite sua mensagem" rows="6" autocomplete="off"></textarea>
+                                <textarea class="contato__item contato__textarea" Nome="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="6" autocomplete="off"></textarea>
                         </div>
                         <div class="contatos__uniform">
                             <div class="contato__botoes">
                                     <input class="contato__botao__esquerda" type="submit" value="Enviar" />
-                                    <input class="contato__botao__direita" type="reset" value="Limpar" class="alt" />
+                                    <input class="contato__botao__direita" id="reset" type="reset" value="Limpar" class="alt" />
                             </div>
                         </div>
                     </form>
@@ -241,6 +255,7 @@
     <footer class="footer__final">
         <p class="final">&copy; COPYRIGHT 2023 - FPCS NETWORK, Codigo diponível para todos</p>
     </footer>
+    <script src="./src/js/envia-email.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./src/js/swiper.js"></script>
 </body>

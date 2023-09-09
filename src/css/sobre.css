@@ -1,0 +1,86 @@
+.sobre{
+    display: flex;
+    justify-content: center;
+}
+
+.sobre__container{
+    width: 80em;
+    padding: 5em 0;
+    background-color: var(--cor-cabecalho);
+}
+
+.sobre__informacoes{
+    margin: 0 3em;
+}
+
+.sobre__titulo{
+    color: var(--lilas-padrao);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sobre__texto{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.sobre__experiencia{
+    display: flex;
+    margin: 1.5em 3em;
+}
+
+.sobre__tempo{
+    font-size: 96px;
+    color: var(--lilas-padrao);
+    font-weight: 500;
+}
+
+.sobre__tempo-informacoes{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 1.5em;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sobre__tipos{
+    display: flex;
+    justify-content:space-around;
+    padding: 0 1.5em;
+    flex-wrap: wrap;
+    gap: 0.1em;
+}
+
+.tipos__item,
+.tipos__item__dif{
+    width: 250px;
+    height: 250px;
+    background-color: var(--cinza-detalhe);
+    /*border: 1px solid;
+    border-radius: 4%;*/
+    border-color: var(--lilas-padrao);
+}
+
+.tipos__item__dif{
+    background-color: var(--lilas-padrao);
+    border-color: var(--branco);
+}
+
+.container__item__tipos{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 6em;
+}
+
+.tipos__item__icon{
+    width: 40px;
+}
+
+.tipos__item__texto{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
