@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Envie os dados para o servidor
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", "jacobethan-seesaw.000webhostapp.com/envia-email.php", true);
+        xhr.open("POST", "https://jacobethan-seesaw.000webhostapp.com/envia-email.php", true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.onreadystatechange = function () {
                     alert ("E-mail enviado com sucesso!");
